@@ -1,5 +1,5 @@
 .footer {
-  background-color: black;
+  background-color:	whitesmoke ;
   padding: 20px;
   margin-top: 50px;
   text-align: center;
@@ -9,11 +9,11 @@
   justify-content: center;
   margin-bottom: 20px;
   size-adjust: 100px;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 .social-icons svg {
-  font-size: 24px;
+  font-size: 40px;
   margin: 0 10px;
   color: #555;
 }
@@ -36,3 +36,36 @@
   text-align: center;
   text-emphasis-color: white;
 }
+
+.aboutcard {
+  
+
+}
+
+input[type = 'text'],
+input[type= 'email'],
+input[type='tel'],
+input[as='Message']{
+  display: black;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+   margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+.error{
+  color: red;
+}
+.form-control{
+  justify-content: center;
+}
+
+

@@ -35,6 +35,7 @@ function Header() {
                 Wood Carving Designs
               </Nav.Link>
               <Nav.Link href="/contactdetails">Contact Details</Nav.Link>
+              <Nav.Link href="/Enquiry">Enquiry</Nav.Link>
               {/* <NavDropdown title="Photo Gallary" id="navbarScrollingDropdown">
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action4">

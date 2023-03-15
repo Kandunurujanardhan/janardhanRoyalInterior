@@ -1,14 +1,15 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 function ContactDetails() {
   return (
-    <>
+    <Container>
+    <div className="aboutcard mt-4">
       <Row>
-        <Col sm={12} md={3} lg={3}>
+        <Col sm={12} md={4} lg={{ span: 4, offset: 2 }}>
           {" "}
-          <Card>
+          <Card className="mb-4" style={{height:"300px",justifyContent:"center"}}>
             <center>
               <i class="bi bi-geo-alt"></i>
               <svg
@@ -40,9 +41,9 @@ function ContactDetails() {
             </center>
           </Card>
         </Col>
-        <Col sm={12} md={3} lg={3}>
-          <Card>
-            <center>
+        <Col sm={12} md={4} lg={4}>
+        <Card className="mb-4" style={{height:"300px",justifyContent:"center"}}>
+                      <center>
               <i class="bi bi-geo-alt"></i>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +77,9 @@ function ContactDetails() {
             </center>
           </Card>
         </Col>
-        <Col sm={12} md={3} lg={3}>
-          <Card>
+        <Col sm={12} md={4} lg={{ span: 4, offset: 2 }}>
+        <Card className="mb-4" style={{height:"300px",justifyContent:"center"}}>
+
             <center>
               <i class="bi bi-telephone"></i>
               <svg
@@ -99,8 +101,9 @@ function ContactDetails() {
             </center>
           </Card>
         </Col>
-        <Col sm={12} md={3} lg={3}>
-          <Card>
+        <Col sm={12} md={4} lg={4}>
+        <Card className="mb-4" style={{height:"300px",justifyContent:"center"}}>
+
             <center>
               <Card.Body>
                 <i class="bi bi-envelope"></i>
@@ -123,7 +126,8 @@ function ContactDetails() {
           </Card>
         </Col>
       </Row>
-    </>
+    </div>
+    </Container>
   );
 }
 

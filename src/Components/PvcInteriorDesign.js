@@ -5,15 +5,15 @@ import { jp } from "../image/images";
 
 function Header() {
   return (
-    <Navbar bg="primary" expand="lg" variant="dark">
+    <Navbar bg="#66ff66" expand="lg" variant="black">
       <Container fluid>
-        <img
+        {/* <img
           className="Symbol"
           src={jp}
           width="50"
           height="50"
           alt="jp-img"
-        ></img>
+        ></img> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -31,7 +31,6 @@ function Header() {
             <Nav.Link href="/contactdetails">False Ceiling Design</Nav.Link>
             <Nav.Link href="/contactdetails">Balcony Design</Nav.Link>
             <Nav.Link href="/contactdetails">Dining Room Design</Nav.Link>
-            <Nav.Link href="/contactdetails">Window Dessign</Nav.Link>
             <Nav.Link href="/contactdetails">Home Office Design</Nav.Link>
           </Nav>
         </Navbar.Collapse>
