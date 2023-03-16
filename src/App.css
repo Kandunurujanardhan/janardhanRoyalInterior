@@ -42,7 +42,7 @@
 
 }
 
-input[type = 'text'],
+/* input[type = 'text'],
 input[type= 'email'],
 input[type='tel'],
 input[as='Message']{
@@ -56,16 +56,24 @@ input[as='Message']{
   border: 1px solid #ccc;
   border-radius: 4px;
    margin-bottom: 20px;
-}
+} */
 
 .form-control {
   margin-bottom: 20px;
 }
 .error{
-  color: red;
+  color:red;
 }
 .form-control{
   justify-content: center;
 }
 
+.card-Title{
+  color:#f8f9fa;
+}
+
+.button{
+  background-color: white;
+  border-radius: 4px;
+}
 
