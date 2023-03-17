@@ -7,13 +7,6 @@ function Header() {
   return (
     <Navbar bg="#66ff66" expand="lg" variant="black">
       <Container fluid>
-        {/* <img
-          className="Symbol"
-          src={jp}
-          width="50"
-          height="50"
-          alt="jp-img"
-        ></img> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

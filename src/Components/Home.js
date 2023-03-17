@@ -16,9 +16,10 @@ import {
   TvSet,
 } from "../image/images";
 
-function Home() {
+function Home(props) {
   return (
     <>
+    {!props.hide ?
       <Carousel fade>
         <Carousel.Item>
           <img
@@ -192,6 +193,7 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      :"hided"}
     </>
   );
 }

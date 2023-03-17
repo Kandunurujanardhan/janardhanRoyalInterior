@@ -11,7 +11,7 @@ function MainPage() {
   return (
     <div>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home hide={false} />} />
         <Route path="/PvcInteriorDesign" element={<PvcInteriorDesign />} />
         <Route path="/WoodCarvingDesign" element={<WoodCarvingDesign />} />
         <Route path="/ContactDetails" element={<ContactDetails />} />
