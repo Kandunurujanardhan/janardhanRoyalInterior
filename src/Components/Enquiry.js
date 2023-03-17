@@ -44,12 +44,18 @@ const Enquiry = () => {
           <Col md={{ span: 3, offset: 3 }}>
             <Card style={{ width: "30rem", backgroundColor: "black" }}>
               <Card.Body>
-                <Card.Title style={{ color: "white" }}>
-                  Get In Touch For Design for Every Budget
-                </Card.Title>
-                <Card.Text style={{ color: "white" }}>
-                  Get Your Dream Home Today. Let Our Experts Help You
-                </Card.Text>
+                <center>
+                  <Card.Title style={{ color: "white" }}>
+                    Get In Touch
+                    <br />
+                    Design for Every Budget
+                  </Card.Title>
+                  <br />
+                  <Card.Text style={{ color: "white" }}>
+                    Get Your Dream Home Today. Let Our
+                    <br /> Experts Help You
+                  </Card.Text>
+                </center>
                 <form onSubmit={formik.handleSubmit}>
                   <div>
                     <label htmlFor="customerName" style={{ color: "white" }}>
