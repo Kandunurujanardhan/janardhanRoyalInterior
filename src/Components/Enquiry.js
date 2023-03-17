@@ -156,15 +156,25 @@ const Enquiry = () => {
                     />
                   </div>
                   <br />
-                  <button type="submit" className="button">
-                    Get Free Quote
-                  </button>
+                  <div>
+                    <center>
+                      <button type="submit" className="button">
+                        Get Free Quote
+                      </button>
+                    </center>
+                  </div>
                 </form>
                 <br />
-                <div style={{ color: "white" }}>
-                  {" "}
-                  * Fields Marked with * will be Mandatory{" "}
-                </div>
+                <center>
+                  <div style={{ color: "white" }}>
+                    {" "}
+                    <p>By Submitting this form, you agree to the </p>
+                    <p style={{ color: "red" }}>
+                      Privacy policy <span style={{ color: "white" }}> & </span>
+                      terms and Condition
+                    </p>
+                  </div>
+                </center>
               </Card.Body>
             </Card>
           </Col>

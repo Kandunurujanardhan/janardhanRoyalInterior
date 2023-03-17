@@ -81,7 +81,7 @@ function Header() {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button style={{width:"80px",height:"38px"}}>Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
