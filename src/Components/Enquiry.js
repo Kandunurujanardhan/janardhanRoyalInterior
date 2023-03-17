@@ -1,16 +1,12 @@
 import React from "react";
 import { useFormik } from "formik";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Form } from "react-bootstrap";
 
 const validate = (values) => {
   const errors = {};
 
   if (!values.firstName) {
     errors.firstName = "Required";
-  }
-
-  if (!values.lastName) {
-    errors.lastName = "Required";
   }
 
   if (!values.phonenumber) {
@@ -29,10 +25,11 @@ const validate = (values) => {
 const Enquiry = () => {
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      customerName: "",
       phonenumber: "+91 ",
       email: "",
+      enquiryType: "",
+      message: "",
     },
     validate,
     onSubmit: (values) => {
@@ -45,47 +42,38 @@ const Enquiry = () => {
       <Row>
         <Container fluid>
           <Col md={{ span: 3, offset: 3 }}>
-            <Card style={{ width: "30rem" , backgroundColor:"black"}}>
+            <Card style={{ width: "30rem", backgroundColor: "black" }}>
               <Card.Body>
-                <Card.Title style={{ color: "white" }}>Get In Touch</Card.Title>
+                <Card.Title style={{ color: "white" }}>
+                  Get In Touch For Design for Every Budget
+                </Card.Title>
                 <Card.Text style={{ color: "white" }}>
-                  If You Wont Any Enquiry Please Fill This Form
+                  Get Your Dream Home Today. Let Our Experts Help You
                 </Card.Text>
                 <form onSubmit={formik.handleSubmit}>
-                  <div >
-                    <label htmlFor="firstName" style={{ color: "white" }}> * First Name :</label>
+                  <div>
+                    <label htmlFor="customerName" style={{ color: "white" }}>
+                      {" "}
+                      * customer Name :
+                    </label>
                     <input
-                      id="firstName"
-                      name="firstName"
+                      id="customerName"
+                      name="customerName"
                       type="text"
                       className="form-control"
                       placeholder="Enter your First Name"
                       onChange={formik.handleChange}
-                      value={formik.values.firstName}
+                      value={formik.values.customerName}
                     />
-                    {formik.errors.firstName ? (
-                      <div className="error">{formik.errors.firstName}</div>
+                    {formik.errors.customerName ? (
+                      <div className="error">{formik.errors.customerName}</div>
                     ) : null}
                   </div>
-
-                  <div >
-                    <label htmlFor="lastName" style={{ color: "white" }}>* Last Name :</label>
-                    <input
-                      id="lastName"
-                      name="lastName"
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter your Last Name"
-                      onChange={formik.handleChange}
-                      value={formik.values.lastName}
-                    />
-                    {formik.errors.lastName ? (
-                      <div className="error" >{formik.errors.lastName}</div>
-                    ) : null}
-                  </div>
-                  <br />
                   <div>
-                    <lable htmlFor="phonenumber" style={{ color: "white" }}> * Phone Number :</lable>
+                    <lable htmlFor="phonenumber" style={{ color: "white" }}>
+                      {" "}
+                      * Phone Number :
+                    </lable>
                     <br />
                     <input
                       type="tel"
@@ -102,7 +90,10 @@ const Enquiry = () => {
                   </div>
                   <br />
                   <div>
-                    <label htmlFor="email" style={{ color: "white" }}> * Email Address :</label>
+                    <label htmlFor="email" style={{ color: "white" }}>
+                      {" "}
+                      * Email Address :
+                    </label>
                     <input
                       id="email"
                       name="email"
@@ -117,14 +108,41 @@ const Enquiry = () => {
                     ) : null}
                   </div>
                   <br />
+                  <div>
+                    <label htmlFor="enquiryType" style={{ color: "white" }}>
+                      Your Enquiry Type:
+                    </label>
+                    <Form.Select
+                      id="enquiryType"
+                      name="enquiryType"
+                      className="form-control"
+                      onChange={formik.handleChange}
+                      value={formik.values.enquiryType}
+                    >
+                      <option value="">Select an enquiry type</option>
+                      <option value="pvcinteriordesign">
+                        PVC Interior Designs
+                      </option>
+                      <option value="woodcarvingdesign">
+                        Wood Carving Design
+                      </option>
+                      <option value="pvcmaterialsales">
+                        PVC Material Sales
+                      </option>
+                      <option value="interiorservice">Interior Service</option>
+                      <option value="others">Others</option>
+                    </Form.Select>
+                  </div>
 
                   <div>
-                    <lable htmlFor="Message" style={{ color: "white" }}>Message : </lable>
+                    <lable htmlFor="Message" style={{ color: "white" }}>
+                      Message :{" "}
+                    </lable>
                     <br />
                     <input
-                      id="Message"
-                      name="Message"
-                      type="Message"
+                      id="message"
+                      name="message"
+                      type="message"
                       className="form-control"
                       placeholder="Enter your Message"
                       onChange={formik.handleChange}
@@ -132,10 +150,15 @@ const Enquiry = () => {
                     />
                   </div>
                   <br />
-                  <button type="submit" className="button">Submit</button>
+                  <button type="submit" className="button">
+                    Get Free Quote
+                  </button>
                 </form>
                 <br />
-                <div style={{ color: "white" }}> * Fields Marked with * will be Mandatory </div>
+                <div style={{ color: "white" }}>
+                  {" "}
+                  * Fields Marked with * will be Mandatory{" "}
+                </div>
               </Card.Body>
             </Card>
           </Col>
