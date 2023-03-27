@@ -36,42 +36,6 @@ function Header() {
               </Nav.Link>
               <Nav.Link href="/contactdetails">Contact Details</Nav.Link>
               <Nav.Link href="/Enquiry">Enquiry</Nav.Link>
-              {/* <NavDropdown title="Photo Gallary" id="navbarScrollingDropdown">
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action4">
-                Modular Kitchen Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
-                Master Bedroom Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Living Room Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Pooja Room Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                TV Unit Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                False Ceiling Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Kids Bedroom Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Balcony Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Dining Room Design
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Window Dessign
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Home Office Design
-              </NavDropdown.Item>
-            </NavDropdown> */}
               <Nav.Link href="about">About</Nav.Link>
             </Nav>
             <Form className="d-flex">

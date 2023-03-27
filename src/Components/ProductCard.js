@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 
 function ProductCard(props) {
   return (
@@ -19,6 +19,6 @@ function ProductCard(props) {
       </Container>
     </>
   );
-}
+};
 
 export default ProductCard;

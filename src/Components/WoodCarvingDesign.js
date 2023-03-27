@@ -126,7 +126,7 @@ function WoodCarvingDesign() {
       <Row>
         {" "}
         {productGrid.map((item) => (
-          <Col sm={12} md={3} lg={{ span: 4}}>
+          <Col sm={12} md={3} lg={{ span: 4 }}>
             <ProductCard productObj={item} />
           </Col>
         ))}

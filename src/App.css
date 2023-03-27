@@ -1,5 +1,5 @@
 .footer {
-  background-color:	whitesmoke ;
+  background-color: whitesmoke;
   padding: 20px;
   margin-top: 50px;
   text-align: center;
@@ -25,21 +25,17 @@
   padding-right: 20px;
 }
 .card {
-
-  border: 1px solid black
-
+  border: 1px solid black;
 }
 .about {
-  background-color:#007f5c;
+  background-color: #80ffff;
   background-size: 100%;
-  color :#f8f9fa;
+  color: #003300;
   text-align: center;
   text-emphasis-color: white;
 }
 
 .aboutcard {
-  
-
 }
 
 /* input[type = 'text'],
@@ -61,19 +57,18 @@ input[as='Message']{
 .form-control {
   margin-bottom: 20px;
 }
-.error{
-  color:red;
+.error {
+  color: red;
 }
-.form-control{
+.form-control {
   justify-content: center;
 }
 
-.card-Title{
-  color:#f8f9fa;
+.card-Title {
+  color: #f8f9fa;
 }
 
-.button{
+.button {
   background-color: white;
   border-radius: 4px;
 }
-
