@@ -11,4 +11,4 @@ export const Officeinterior1 = require("../image/OfficeInterior1.png");
 export const Officeinterior2 = require("../image/OfficeInterior2.png");
 export const TvSet = require("../image/TvSet.png");
 export const jp = require("../image/jp.png");
-export const about1 = require("../image/about1.png");
+// export const about1 = require("../image/about1.png");

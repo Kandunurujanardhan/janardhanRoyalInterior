@@ -13,8 +13,7 @@ import {
   Officeinterior,
   Officeinterior1,
   Officeinterior2,
-  TvSet,
-  jp,
+  TvSet
 } from "../image/images";
 import ProductCard from "./ProductCard";
 
